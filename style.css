@@ -1,0 +1,404 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url("/fonts/Manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Anticva";
+    src: url("/fonts/Anticva/Anticva-Regular.otf");
+}
+
+p {
+    font-family: "Manrope-Regular";
+}
+/* body */
+
+body {
+    background-color: #f9f0e9;
+}
+
+header {
+    
+    max-width: 1440px;
+    height: 1024px;
+}
+
+.header-img {
+    position: relative;
+}
+
+.header-img img {
+    position: absolute;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.img-top {
+   left: 435px;
+}
+.img-left {
+    z-index: 0;
+top: 245px;
+}
+.img-right {
+    left: 1300px;
+    top: 600px;
+}
+
+.desctop {}
+
+.header-main {
+    font-family: "Manrope-Regular";
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    align-items: center;
+    background-color: #f97349;
+    float: left;
+    color: #f9f0e9;
+    width: 203px;
+    height: 140px;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.sity {
+    display: flex;
+    align-items: center;
+    color: #303030;
+    font-size: 16px;
+    margin-right: 33px;
+}
+
+.sity img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* бургер */
+.burger {
+    cursor: pointer;
+    border: solid 1px #30303007;
+    position: relative; 
+    width: 68px; 
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.burger:hover.burger span  {
+    background: #F97349;
+}
+
+.burger:hover.burger span:after {
+    background: #F97349;
+}
+
+.burger:hover.burger span:before {
+    background: #F97349;
+}
+
+.burger:hover {
+    border: solid 1px #F97349;
+}
+
+.burger span {
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
+}
+
+.burger span:after {
+    content: '';
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    background: #515758;
+    bottom: 10px;
+}
+
+.burger span:before {
+    content: '';
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    background: #515758;
+    top: 10px;
+}
+
+
+    
+
+
+.header-info {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-txt {
+    float: left;
+width: 427px;
+height: 82px;
+}
+
+.info-txt p {
+    color: #30303050;
+    font-size: 16px;
+}
+
+.info-menu {
+    float: right;
+    font-family: "Manrope-Regular";
+    width: 429px;
+    height: 309px;
+}
+
+.first {
+    padding-top: 0;
+}
+
+.info-menu ul li {
+    line-height: 32.78px;
+    border-bottom: 1px solid #f9724936;
+    padding: 16px 0;
+}
+
+.info-menu a {
+    color: #303030;
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+    
+}
+.title {
+    width: 1320px;
+    padding-top: 96px ;
+    
+}
+
+.title h1 {
+    font-family: "Anticva";
+    font-size: 105px;
+    line-height: 126.21px;
+
+}
+
+.title-color {
+    color: #303030;
+}
+
+.title-color span {
+    color: #f97349;
+}
+
+/* форма запроса */
+
+.form {
+    position: relative;
+    z-index: 10;
+    padding: 164px 0;
+    background-color: #F9F9F9;
+}
+
+.form-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-txt h2 {
+    padding: 0 225px;
+    text-align: center;
+    font-family: "Anticva";
+    font-family: Anticva;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    color: #303030;
+}
+
+.form-txt p {
+    text-align: center;
+    padding: 48px 310px;
+    font-family: "Manrope-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    color: rgba(48, 48, 48, 0.50); 
+}
+
+.form-main {
+    display: grid;
+    justify-content: center;
+}
+
+
+.form-time {
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 370px;
+    height: 54px;
+    flex-shrink: 0; 
+    border-radius: 42px;
+    border: 1px solid rgba(48, 48, 48, 0.5); 
+}
+
+.form-services {
+    margin: 8px 0;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 370px;
+    height: 54px;
+    flex-shrink: 0; 
+    border-radius: 42px;
+    border: 1px solid rgba(48, 48, 48, 0.50); 
+}
+.form-area {
+    margin: 8px 0;
+    font-size: 16px;
+    padding: 0 30px;
+    width: 370px;
+    height: 54px;
+    flex-shrink: 0; 
+    border-radius: 42px;
+    border: 1px solid rgba(48, 48, 48, 0.5); 
+}
+
+.form-main button {
+    margin-top: 8px;
+    width: 430px;
+    height: 60px;
+    flex-shrink: 0; 
+    border-radius: 42px;
+    border: 1px solid var(--main, #F97349);
+    font-family: "Manrope-Regular";
+    color: #303030;
+    text-align: center; 
+    background-color: #F9F9F9; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-main button:hover {
+    background-color: #f9724960;
+}
+
+/* лист */
+.list {
+    background-color: #F9F9F9;
+    border: 1px solid #30303008;
+}
+
+.list-main ul {
+    display: flex;
+    justify-content: center;
+}
+
+.list-main ul li {
+    padding: 40px 0;
+    display: flex;
+    position: relative;
+    list-style-type: disc;
+    font-family: "Manrope-Regular";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase; 
+    color: #F97349;
+    margin: 0 30px;
+ 
+}
+
+.list-main ul li::before {
+    content: '';
+    position: absolute;
+    font-size: 24px;
+    width: 14px;
+    height: 14px;
+    background-color: #F97349;
+    border-radius: 10px;
+    top: 51px;
+    left: -37px;
+}
+/* footer */
+footer {
+    height: 500px;
+    background-color: #303030;
+}
