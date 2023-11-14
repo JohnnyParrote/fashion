@@ -44,12 +44,12 @@ table {
 
 @font-face {
     font-family: "Manrope-Regular";
-    src: url("/fonts/Manrope/static/Manrope-Regular.ttf");
+    src: url("fonts/Manrope/static/Manrope-Regular.ttf");
 }
 
 @font-face {
     font-family: "Anticva";
-    src: url("/fonts/Anticva/Anticva-Regular.otf");
+    src: url("fonts/Anticva/Anticva-Regular.otf");
 }
 
 p {
