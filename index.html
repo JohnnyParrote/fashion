@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Фэшн-бьюти</title>
 </head>
 <body>
@@ -14,6 +15,25 @@
             <img src="img/right.png" alt="" class="img-right">
         </div>
         <div class="wrapper">
+            <div class="popup-desctop">
+                <div class="popup-menu">
+                    <div class="popup-item1">
+                        <img src="img/Frame 7.png" alt="">
+                        <p class="item-title">Запись</p>
+                        <p class="item-txt">Ногтевой сервис, визаж, перманентный макияж, брови, ресницы</p>
+                    </div>
+                    <div class="popup-item2">
+                        <img src="img/Frame 8.png" alt="">
+                        <p class="item-title">Специальные предложения</p>
+                        <p class="item-txt">Скидки, акции, бонусы</p>
+                    </div>
+                    <div class="popup-item3">
+                        <img src="img/Frame 9.png" alt="">
+                        <p class="item-title">Партнерам</p>
+                        <p class="item-txt">Тоже написать какую-то информацию</p>
+                    </div>
+                </div>
+            </div>    
             <div class="desctop">
                 <div class="header-main">
                     <div class="logo">Логотип</div>
@@ -61,18 +81,94 @@
         </div>
     </section>
     <section class="list">
-        <div class="list-main">
-            <ul>
-                <li>ногтевой сервис</li>
-                <li>визаж</li>
-                <li>перманентный макияж</li>
-                <li>брови</li>
-                <li>ресницы</li>
-                <li>ногтевой сервис</li>
-                <li>визаж</li>
-            </ul>
+        <div class="wrapper1440">
+            <div class="list-main">
+                <ul>
+                    <li>ногтевой сервис</li>
+                    <li>визаж</li>
+                    <li>перманентный макияж</li>
+                    <li>брови</li>
+                    <li>ресницы</li>
+                    <li>ногтевой сервис</li>
+                    <li>визаж</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="offers">
+        <div class="wrapper1440">
+            <div class="offers-main">
+                <h2>Специальные предложения для тебя</h2>
+                
+                <div class="offers-stock">
+                    <div class="stock-saloon">
+                        <img src="img/Ellipse.png" alt="">
+                        <h3>название салона</h3>
+                        <p>Адрес салона</p>
+                    </div>
+                    
+                    <div class="stock-slider">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-main">
+                                        <h3>Акция месяца!</h3>
+                                        <p>Дарим подарки весь месяц при заказе услуги Ламинирование ресниц и архитектура бровей</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-main">
+                                        <h3>Акция месяца!</h3>
+                                        <p>Дарим подарки весь месяц при заказе услуги Ламинирование ресниц и архитектура бровей</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-main">
+                                        <h3>Акция месяца!</h3>
+                                        <p>Дарим подарки весь месяц при заказе услуги Ламинирование ресниц и архитектура бровей</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-main">
+                                        <h3>Акция месяца!</h3>
+                                        <p>Дарим подарки весь месяц при заказе услуги Ламинирование ресниц и архитектура бровей</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-main">
+                                        <h3>Акция месяца!</h3>
+                                        <p>Дарим подарки весь месяц при заказе услуги Ламинирование ресниц и архитектура бровей</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="wrapper">
+            <div class="map-box">
+                <div class="map-txt">
+                    <h2>100 салонов красоты рядом с тобой</h2>
+                    <p>Найди подходящий для себя салон, а мы поможем подобрать время записи</p>
+                </div>
+                <div class="map-main">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8356f2f271269b377d7039da0ce57e8e4ee259789e0a973f59fc3bd3e9494f88&amp;source=constructor" width="100%" height="489" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </section>
     <footer></footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
