@@ -16,14 +16,62 @@ const eyelashesbtn = document.querySelector ('.services-eyelashes');
 const btncloseserv = document.querySelector ('.btn-off-serv');
 const services = document.querySelector ('.services');
 const formserv = document.querySelector ('.form-services');
+const categories = document.querySelector ('.next-categories');
+const poopup = document.querySelector ('.poopup-categories');
+const servbtn = document.querySelector ('.services-choisbtn');
+const list = document.querySelector ('.listUp');
+const back = document.querySelector ('.window-navigation-prev');
+const record = document.querySelector ('.record');
+const btroffrec = document.querySelector ('.btn-off-record');
+const btnend = document.querySelector ('.record-btn');
+const finish = document.querySelector ('.finish');
+const btnfinishoff = document.querySelector ('.btn-off-finish');
+
+btnend.onclick = function () {
+    finish.classList.add('show')
+    record.classList.remove('show')
+}
+
+btnfinishoff.onclick = function () {
+    finish.classList.remove('show')
+}
+
+btroffrec.onclick = function () {
+    list.classList.add('show')
+    record.classList.remove('show')
+}
+
+back.onclick = function () {
+    services.classList.add('show')
+    list.classList.remove('show')
+}
+
+// servbtn.onclick = function () {
+//     services.classList.remove('show')
+//     list.classList.add('show')
+// }
+
+categories.onclick = function () {
+    categories.classList.toggle('rotate')
+    poopup.classList.toggle('active')
+}
 
 
 document.addEventListener('click',e => {
+    console.log(e.target)
     if (e.target.className == 'calender_btn') {
         e.target.classList.add('calender_btn__active')
     }
     else if (e.target.className == 'calender_btn calender_btn__active') {
         e.target.classList.remove('calender_btn__active')
+    }
+    else if (e.target.className == 'services-choisbtn') {
+        list.classList.add('show')
+        services.classList.remove('show')
+    }
+    else if (e.target.className == 'saloon-signup') {
+        record.classList.add('show')
+        list.classList.remove('show')
     }
 })
 
