@@ -693,10 +693,12 @@ height: 82px;
     margin-bottom: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+}
+.btn-tm__active {
+    background-color: #F97349 !important;
 }
 
-.saloon-timebtn button {
+.btn-tm  {
     margin-top: 16px;
     width: 95px;
     height: 40px;
