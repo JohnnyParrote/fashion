@@ -74,10 +74,10 @@
                 <p>Здесь ты сможешь оформить запись в салон красоты рядом с домом. Заполни небольшую форму и мы подберем для тебя подходящий салон с нужным временем.</p>
             </div>
             <div class="form-main">
-                <input type="text" placeholder="выбрать дату и время" required class="form-time">
-                <input type="text" placeholder="выбрать услугу" required class="form-services">
-                <input type="text" placeholder="выбрать район" required class="form-area">
-                <button>показать</button>
+                <input type="text" placeholder="Выбрать дату и время" required class="form-time">
+                <input type="text" placeholder="Выбрать услугу" required class="form-services">
+                <input type="text" placeholder="Выбрать район" required class="form-area">
+                <button class="form-main__btn">показать</button>
             </div>
             <div class="position">
                 <div class="calendar">
@@ -147,217 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="services">
-                    <div class="services-window">
-                        <button class="btn-off-serv"><img src="img/frame.png" alt=""></button>
-                        <div class="services-menu">
-                            <button class="services-niles">Ногтевой сервис</button>
-                            <button class="services-makeup">Визаж</button>
-                            <button class="services-permanent">Перманентный макияж</button>
-                            <button class="services-brows">Брови</button>
-                            <button class="services-eyelashes">Ресницы</button>
-                        </div>
-                        <div class="services-nails-box">
-                            <div class="nails-box-main">
-                                <p>Маникюр</p>
-                                <p>Покрытие гель-лаком</p>
-                                <p>Комплекс (снятие, маникюр, покрытие гель-лаком)</p>
-                                <p>Наращивание ногтей</p>
-                                <p>Педикюр</p>
-                                <p>Комплекс (снятие, педикюр, покрытие гель-лаком) </p>
-                                <p>Снятие гель-лака</p>
-                                <p>Снятие нарощенных ногтей</p>
-                            </div>
-                            <div class="nails-box-additionally">
-                                <p>Дополнительно</p>
-                                <p>Дизайн 1 ногтя</p>
-                                <p>Наращивание 1 ногтя</p>
-                                <p>Уход за руками</p>
-                                <p>Уход за пятками</p>
-                            </div>
-                            <div class="services-chois">
-                                <button class="services-choisbtn">Выбрать</button>
-                            </div>
-                        </div>
-                        <div class="services-makeup-box">
-                            <div class="makeup-box-main">
-                                <p>Дневной макияж</p>
-                                <p>Вечерний макияж</p>
-                                <p>свадебный макеяж</p>
-                            </div>
-                            <div class="services-chois">
-                                <button class="services-choisbtn">Выбрать</button>
-                            </div>
-                        </div>
-                        <div class="services-permanent-box">
-                            <div class="permanent-box-main">
-                                <p>Перманентный макияж губ</p>
-                                <p>Перманентный макияж бровей</p>
-                                <p>Перманентный макияж глаз</p>
-                            </div>
-                            <div class="services-chois">
-                                <button class="services-choisbtn">Выбрать</button>
-                            </div>
-                        </div>
-                        <div class="services-brows-box">
-                            <div class="brows-box-main">
-                                <p>Архитектура бровей</p>
-                                <p>Коррекция бровей</p>
-                                <p>Комплекс (окрашивание, коррекция)</p>
-                                <p>Ламинирование бровей</p>
-                            </div>
-                            <div class="services-chois">
-                                <button class="services-choisbtn">Выбрать</button>
-                            </div>
-                        </div>
-                        <div class="services-eyelashes-box">
-                            <div class="eyelashes-box-main">
-                                <p>Ламинирование ресниц</p>
-                                <p>Наращивание ресниц 2D</p>
-                                <p>Наращивание ресниц 3D</p>
-                                <p>Наращивание ресниц 4D</p>
-                                <p>Снятие нарощенных ресниц</p>
-                            </div>
-                            <div class="services-chois">
-                                <button class="services-choisbtn">Выбрать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="listUp">
-                <div class="list-window">
-                    <div class="list-window-navigation">
-                        <div class="window-navigation-prev"><img src="img/Frame4.png" alt=""><p>Вернуться назад</p></div>
-                        <div class="window-navigation-next"><p>Категория салона</p><img src="img/rightbtn.png" alt="" class="next-categories"></div>
-                    </div>
-                    <div class="poopup-categories">
-                        <div class="catigories-txt">
-                            <p>Премиум</p>
-                            <p>Стандарт</p>
-                            <p>Эконом</p>
-                        </div>
-                    </div>
-                    <div class="listUp-main">
-                        <div class="list-saloon">
-                            <div class="saloon-address">
-                                <img src="img/Rectangle16.png" alt="">
-                                <p>ул. Электродная, д. 2с3</p>
-                            </div>       
-                            <div class="list-saloon-time">
-                                <p>Доступное время:</p>
-                                <div class="saloon-timebtn">
-                                    <button>12:30</button>
-                                    <button>13:30</button>
-                                    <button>14:00</button>
-                                    <button>14:30</button>
-                                </div>
-                                <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
-                                <div class="saloon-price">
-                                    <p>Цена: 2500p</p>
-                                    <button class="saloon-signup">Записаться</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-saloon">
-                            <div class="saloon-address">
-                                <img src="img/Rectangle17.png" alt="">
-                                <p>ул. Электродная, д. 2с3</p>
-                            </div>       
-                            <div class="list-saloon-time">
-                                <p>Доступное время:</p>
-                                <div class="saloon-timebtn">
-                                    <button>12:30</button>
-                                    <button>13:30</button>
-                                    <button>14:00</button>
-                                    <button>14:30</button>
-                                </div>
-                                <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
-                                <div class="saloon-price">
-                                    <p>Цена: 2500p</p>
-                                    <button class="saloon-signup">Записаться</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-saloon">
-                            <div class="saloon-address">
-                                <img src="img/Rectangle18.png" alt="">
-                                <p>ул. Электродная, д. 2с3</p>
-                            </div>       
-                            <div class="list-saloon-time">
-                                <p>Доступное время:</p>
-                                <div class="saloon-timebtn">
-                                    <button>12:30</button>
-                                    <button>13:30</button>
-                                    <button>14:00</button>
-                                    <button>14:30</button>
-                                </div>
-                                <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
-                                <div class="saloon-price">
-                                    <p>Цена: 2500p</p>
-                                    <button class="saloon-signup">Записаться</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-saloon">
-                            <div class="saloon-address">
-                                <img src="img/Rectangle16.png" alt="">
-                                <p>ул. Электродная, д. 2с3</p>
-                            </div>       
-                            <div class="list-saloon-time">
-                                <p>Доступное время:</p>
-                                <div class="saloon-timebtn">
-                                    <button>12:30</button>
-                                    <button>13:30</button>
-                                    <button>14:00</button>
-                                    <button>14:30</button>
-                                </div>
-                                <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
-                                <div class="saloon-price">
-                                    <p>Цена: 2500p</p>
-                                    <button class="saloon-signup">Записаться</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-saloon">
-                            <div class="saloon-address">
-                                <img src="img/Rectangle17.png" alt="">
-                                <p>ул. Электродная, д. 2с3</p>
-                            </div>       
-                            <div class="list-saloon-time">
-                                <p>Доступное время:</p>
-                                <div class="saloon-timebtn">
-                                    <button>12:30</button>
-                                    <button>13:30</button>
-                                    <button>14:00</button>
-                                    <button>14:30</button>
-                                </div>
-                                <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
-                                <div class="saloon-price">
-                                    <p>Цена: 2500p</p>
-                                    <button class="saloon-signup">Записаться</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="record">
-                <div class="record-window">
-                    <button class="btn-off-record"><img src="img/backrec.png" alt=""></button>
-                    <p>Осталось совсем немного и запись будет оформлена</p>
-                    <div class="record-input">
-                        <input type="text" placeholder="Имя" required class="record-name">
-                        <input type="text" placeholder="+7 999 000-00-00" required class="record-tel">
-                    </div>
-                    <button class="record-btn">ОТПРАВИТЬ</button>
-                </div>
-            </div>
-            <div class="finish">
-                <div class="finish-window">
-                    <button class="btn-off-finish"><img src="img/backrec.png" alt=""></button>
-                    <p>Ваша запись успешно оформлена! ждем вас 11 августа в 13:30 в нашем салоне.</p>
-                </div>
+              
             </div>
         </div>
     </section>
@@ -444,6 +234,233 @@
                 </div>
                 <div class="map-main">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8356f2f271269b377d7039da0ce57e8e4ee259789e0a973f59fc3bd3e9494f88&amp;source=constructor" width="100%" height="489" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup">
+        <div class="popup__body">
+        <div class="listUp">
+            <div class="list-window">
+                <div class="list-window-navigation">
+                    <div class="window-navigation-prev"><img src="img/Frame4.png" alt=""><p>Вернуться назад</p></div>
+                    <div class="window-navigation-next"><p>Категория салона</p><img src="img/rightbtn.png" alt="" class="next-categories"></div>
+                </div>
+                <div class="poopup-categories">
+                    <div class="catigories-txt">
+                        <p>Премиум</p>
+                        <p>Стандарт</p>
+                        <p>Эконом</p>
+                    </div>
+                </div>
+                <div class="listUp-main">
+                    <div class="list-saloon">
+                        <div class="saloon-address">
+                            <img src="img/Rectangle16.png" alt="">
+                            <p>ул. Электродная, д. 2с3</p>
+                        </div>       
+                        <div class="list-saloon-time">
+                            <p>Доступное время:</p>
+                            <div class="saloon-timebtn">
+                                <button>12:30</button>
+                                <button>13:30</button>
+                                <button>14:00</button>
+                                <button>14:30</button>
+                            </div>
+                            <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
+                            <div class="saloon-price">
+                                <p>Цена: 2500p</p>
+                                <button class="saloon-signup">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-saloon">
+                        <div class="saloon-address">
+                            <img src="img/Rectangle17.png" alt="">
+                            <p>ул. Электродная, д. 2с3</p>
+                        </div>       
+                        <div class="list-saloon-time">
+                            <p>Доступное время:</p>
+                            <div class="saloon-timebtn">
+                                <button>12:30</button>
+                                <button>13:30</button>
+                                <button>14:00</button>
+                                <button>14:30</button>
+                            </div>
+                            <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
+                            <div class="saloon-price">
+                                <p>Цена: 2500p</p>
+                                <button class="saloon-signup">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-saloon">
+                        <div class="saloon-address">
+                            <img src="img/Rectangle18.png" alt="">
+                            <p>ул. Электродная, д. 2с3</p>
+                        </div>       
+                        <div class="list-saloon-time">
+                            <p>Доступное время:</p>
+                            <div class="saloon-timebtn">
+                                <button>12:30</button>
+                                <button>13:30</button>
+                                <button>14:00</button>
+                                <button>14:30</button>
+                            </div>
+                            <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
+                            <div class="saloon-price">
+                                <p>Цена: 2500p</p>
+                                <button class="saloon-signup">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-saloon">
+                        <div class="saloon-address">
+                            <img src="img/Rectangle16.png" alt="">
+                            <p>ул. Электродная, д. 2с3</p>
+                        </div>       
+                        <div class="list-saloon-time">
+                            <p>Доступное время:</p>
+                            <div class="saloon-timebtn">
+                                <button>12:30</button>
+                                <button>13:30</button>
+                                <button>14:00</button>
+                                <button>14:30</button>
+                            </div>
+                            <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
+                            <div class="saloon-price">
+                                <p>Цена: 2500p</p>
+                                <button class="saloon-signup">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-saloon">
+                        <div class="saloon-address">
+                            <img src="img/Rectangle17.png" alt="">
+                            <p>ул. Электродная, д. 2с3</p>
+                        </div>       
+                        <div class="list-saloon-time">
+                            <p>Доступное время:</p>
+                            <div class="saloon-timebtn">
+                                <button>12:30</button>
+                                <button>13:30</button>
+                                <button>14:00</button>
+                                <button>14:30</button>
+                            </div>
+                            <p>Выбранная услуга: <span>Маникюр + снятие + покрытие гель-лаком</span></p>
+                            <div class="saloon-price">
+                                <p>Цена: 2500p</p>
+                                <button class="saloon-signup">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="popup2">
+        <div class="popup__body">
+        <div class="record">
+            <div class="record-window">
+                <button class="btn-off-record"><img src="img/backrec.png" alt=""></button>
+                <p>Осталось совсем немного и запись будет оформлена</p>
+                <div class="record-input">
+                    <input type="text" placeholder="Имя" required class="record-name">
+                    <input type="text" placeholder="+7 999 000-00-00" required class="record-tel">
+                </div>
+                <button class="record-btn">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="popup3">
+        <div class="popup__body">
+            <div class="finish">
+                <div class="finish-window">
+                    <button class="btn-off-finish"><img src="img/backrec.png" alt=""></button>
+                    <p>Ваша запись успешно оформлена! ждем вас 11 августа в 13:30 в нашем салоне.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popup4">
+        <div class="popup_body">
+            <div class="services">
+                <div class="services-window">
+                    <button class="btn-off-serv"><img src="img/frame.png" alt=""></button>
+                    <div class="services-menu">
+                        <button class="services-niles">Ногтевой сервис</button>
+                        <button class="services-makeup">Визаж</button>
+                        <button class="services-permanent">Перманентный макияж</button>
+                        <button class="services-brows">Брови</button>
+                        <button class="services-eyelashes">Ресницы</button>
+                    </div>
+                    <div class="services-nails-box">
+                        <div class="nails-box-main">
+                            <p class="services__select">Маникюр</p>
+                            <p class="services__select">Покрытие гель-лаком</p>
+                            <p class="services__select">Комплекс (снятие, маникюр, покрытие гель-лаком)</p>
+                            <p class="services__select">Наращивание ногтей</p>
+                            <p class="services__select">Педикюр</p>
+                            <p class="services__select">Комплекс (снятие, педикюр, покрытие гель-лаком) </p>
+                            <p class="services__select">Снятие гель-лака</p>
+                            <p class="services__select">Снятие нарощенных ногтей</p>
+                        </div>
+                        <div class="nails-box-additionally">
+                            <p class="services__select">Дополнительно</p>
+                            <p class="services__select">Дизайн 1 ногтя</p>
+                            <p class="services__select">Наращивание 1 ногтя</p>
+                            <p class="services__select">Уход за руками</p>
+                            <p class="services__select">Уход за пятками</p>
+                        </div>
+                        <div class="services-chois">
+                            <button id="btn1" class="services-choisbtn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="services-makeup-box">
+                        <div class="makeup-box-main">
+                            <p class="services__select">Дневной макияж</p>
+                            <p class="services__select">Вечерний макияж</p>
+                            <p class="services__select">свадебный макеяж</p>
+                        </div>
+                        <div class="services-chois">
+                            <button id="btn2" class="services-choisbtn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="services-permanent-box">
+                        <div class="permanent-box-main">
+                            <p class="services__select">Перманентный макияж губ</p>
+                            <p class="services__select">Перманентный макияж бровей</p>
+                            <p class="services__select">Перманентный макияж глаз</p>
+                        </div>
+                        <div class="services-chois">
+                            <button id="btn3" class="services-choisbtn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="services-brows-box">
+                        <div class="brows-box-main">
+                            <p class="services__select">Архитектура бровей</p>
+                            <p class="services__select">Коррекция бровей</p>
+                            <p class="services__select">Комплекс (окрашивание, коррекция)</p>
+                            <p class="services__select">Ламинирование бровей</p>
+                        </div>
+                        <div class="services-chois">
+                            <button id="btn4" class="services-choisbtn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div class="services-eyelashes-box">
+                        <div class="eyelashes-box-main">
+                            <p class="services__select">Ламинирование ресниц</p>
+                            <p class="services__select">Наращивание ресниц 2D</p>
+                            <p class="services__select">Наращивание ресниц 3D</p>
+                            <p class="services__select">Наращивание ресниц 4D</p>
+                            <p class="services__select">Снятие нарощенных ресниц</p>
+                        </div>
+                        <div class="services-chois">
+                            <button id="btn5" class="services-choisbtn">Выбрать</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

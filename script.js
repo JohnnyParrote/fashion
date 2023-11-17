@@ -26,30 +26,39 @@ const btroffrec = document.querySelector ('.btn-off-record');
 const btnend = document.querySelector ('.record-btn');
 const finish = document.querySelector ('.finish');
 const btnfinishoff = document.querySelector ('.btn-off-finish');
+const popupMain = document.querySelector ('.popup');
+const popupMain2 = document.querySelector ('.popup2');
+const popupMain3 = document.querySelector ('.popup3');
+const popupMain4 = document.querySelector ('.popup4');
+const btn1 = document.querySelector('#btn1');
+const btn2 = document.querySelector('#btn2');
+const btn3 = document.querySelector('#btn3');
+const btn4 = document.querySelector('#btn4');
+const btn5 = document.querySelector('#btn5');
 
 btnend.onclick = function () {
-    finish.classList.add('show')
-    record.classList.remove('show')
+    finish.classList.add('popup__active')
+    record.classList.remove('popup__active')
+    popupMain3.classList.add('popup__active')
+    popupMain2.classList.remove('popup__active')
 }
 
 btnfinishoff.onclick = function () {
-    finish.classList.remove('show')
+    finish.classList.remove('popup__active')
+    popupMain3.classList.remove('popup__active')
 }
 
 btroffrec.onclick = function () {
-    list.classList.add('show')
-    record.classList.remove('show')
+    popupMain2.classList.remove('popup__active')
+    record.classList.remove('popup__active')
 }
 
 back.onclick = function () {
-    services.classList.add('show')
-    list.classList.remove('show')
+    popupMain.classList.remove('popup__active')
+    list.classList.remove('popup__active')
 }
 
-// servbtn.onclick = function () {
-//     services.classList.remove('show')
-//     list.classList.add('show')
-// }
+
 
 categories.onclick = function () {
     categories.classList.toggle('rotate')
@@ -65,13 +74,35 @@ document.addEventListener('click',e => {
     else if (e.target.className == 'calender_btn calender_btn__active') {
         e.target.classList.remove('calender_btn__active')
     }
-    else if (e.target.className == 'services-choisbtn') {
-        list.classList.add('show')
-        services.classList.remove('show')
+    else if (e.target.className == 'form-main__btn') {
+        list.classList.add('popup__active')
+        popupMain.classList.add('popup__active')
+        services.classList.remove('popup__active')
     }
     else if (e.target.className == 'saloon-signup') {
-        record.classList.add('show')
-        list.classList.remove('show')
+        record.classList.add('popup__active')
+        popupMain2.classList.add('popup__active')
+        list.classList.remove('popup__active')
+        popupMain.classList.remove('popup__active')
+    }
+    else if(e.target.className == 'services__select') {
+        e.target.classList.add('services__select_add')
+        btn1.classList.add('color');
+        btn2.classList.add('color');
+        btn3.classList.add('color');
+        btn4.classList.add('color');
+        btn5.classList.add('color');
+    }
+    else if(e.target.className == 'services__select services__select_add') {
+        e.target.classList.remove('services__select_add')
+    }
+    else if(e.target.className == 'services-choisbtn') {
+        services .classList.remove('popup__active')
+        popupMain4.classList.remove('popup__active')
+    }
+    else if(e.target.className == 'services-choisbtn color') {
+        services .classList.remove('popup__active')
+        popupMain4.classList.remove('popup__active')
     }
 })
 
@@ -87,11 +118,13 @@ btnclose.onclick = function () {
 }
 
 btncloseserv.onclick = function () {
-    services .classList.remove('show')
+    services .classList.remove('popup__active')
+    popupMain4.classList.remove('popup__active')
 }
 
 formserv.onclick = function () {
-    services .classList.add('show')
+    services .classList.add('popup__active')
+    popupMain4.classList.add('popup__active')
     nailsbtn .classList.add('active')
     makeupbtn.classList.remove('active')
     permanentbtn .classList.remove('active')

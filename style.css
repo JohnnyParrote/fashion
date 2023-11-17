@@ -63,6 +63,12 @@ body {
     background-color: #f9f0e9 !important;
 }
 
+button {
+    font-family: "Manrope-Regular";
+    font-size: 16px;    
+    font-weight: 400;
+}
+
 header {
     margin: 0 auto;
     max-width: 1440px;
@@ -439,7 +445,10 @@ height: 82px;
     display: grid;
     justify-content: center;
 }
-
+.form-main__btn {
+    color: #303030;
+    text-transform: uppercase;
+}
 
 .form-time {
     margin-bottom: 8px;
@@ -498,15 +507,48 @@ height: 82px;
 .form-main button:hover {
     background-color: #f9724960;
 }
-.listUp {
-    position: absolute;
-    font-family: "Manrope-Regular";
-    background-color: #F9F9F9;
-    top: 150px;
-    left:240px;
-    visibility: hidden;
+
+.color {
+    background-color: #F97349 !important;
+    color: #fff !important;
+}
+
+.popup, .popup2, .popup3, .popup4{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    top: 0;
+    left: 0;
+    z-index: 200;
     opacity: 0;
-    transition: all 0.5s ease;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup__body {
+    max-height: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup__active {
+    opacity: 1 !important;
+    transform: translate(0px, 0px) !important;
+    visibility: visible !important;
+}
+.listUp {
+    background-color: #fff;
+  color: #000;
+  max-width: 1300px;
+  padding: 30px 100px;
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, -100%);
 }
 
 .listUp.show {
@@ -693,17 +735,18 @@ height: 82px;
 /* запись */
 .record {
     font-family: "Manrope-Regular";
-    position: absolute;
     width: 494px;
     height: 482px;
     border-radius: 42px;
     background-color: #F97349;
     text-align: center;
-    top: 340px;
-    right: 545px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
 }
 
 .record.show {
@@ -731,13 +774,17 @@ height: 82px;
 }
 
 .record-input input {
-    opacity: 0.36;
     background: none;
     border: none;
     border-bottom: 1px solid;
     color: #ffffff;
     padding: 32px 0 16px 0;
     outline:none;
+}
+
+.record-input input::placeholder {
+    opacity: 0.5;
+    font-weight: 300;
 }
 
 .record-btn {
@@ -749,6 +796,13 @@ height: 82px;
     border-radius: 42px;
     color: #303030;
     font-size: 16px;
+}
+.record-name:hover::placeholder {
+    opacity: 1;
+}
+.record-tel:hover::placeholder {
+    opacity: 1;
+
 }
 
 .btn-off-record {
@@ -762,17 +816,18 @@ height: 82px;
 /* финиш */
 .finish {
     font-family: "Manrope-Regular";
-    position: absolute;
     width: 494px;
     height: 482px;
     border-radius: 42px;
     background-color: #F97349;
     text-align: center;
-    top: 340px;
-    right: 545px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
 }
 
 .finish.show {
@@ -968,7 +1023,9 @@ color: #303030;
     background-color: #F9F9F9;
     margin: 8px;
 }
-
+.services__select_add {
+    color: #f97349 !important;
+}
 /* сервис */
 
 /* btn-off */
@@ -977,7 +1034,7 @@ color: #303030;
     background: none;
     border: none;
     position: absolute;
-    right: 32px;
+    right: -40px;
     top: -15px;
     background: none;
     padding: 0;
@@ -987,6 +1044,7 @@ color: #303030;
     border: none;
     background-color: none;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .services-window {
@@ -999,15 +1057,27 @@ color: #303030;
 .services {
     font-family: "Manrope-Regular";
     width: 1098px;
-    position: absolute;
-    left: 100px;
-    top: -328px;
+    left: 0px;
+    top: 0px;
     border: 1px solid rgba(48, 48, 48, 0.16);
     background-color: #f9f9f9;
     border-radius: 42px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease;
+    font-family: "Manrope-Regular";
+    display: flex;
+    justify-content: center;
+    border-radius: 42px;
+    margin: 50px  auto;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: relative;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
 }
 .services.show {
     visibility: visible;
@@ -1491,4 +1561,72 @@ color: #ffffff;
 footer {
     height: 500px;
     background-color: #303030;
+}
+
+@media (max-width: 768px) {
+
+body {
+    background-color:  #fff !important;
+}    
+.img-top, .img-left, .img-right {
+    display: none;
+}
+.desctop {
+    flex-direction: column;
+}
+.info-menu {
+    float: left;
+}
+.info-txt {
+    padding-left: 2rem;
+}
+.title {
+    float: left;
+}
+.logo {
+    margin-left: 2rem;
+}
+.title {
+    width: 100%;
+}
+.title h1 {
+    font-size: 96px;
+    width: 100%;
+}
+.map-main {
+    width: 100%;
+}
+.offers-stock {
+    flex-direction: column;
+}
+.wrapper1440 {
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+.list-main ul {
+    flex-direction: column;
+}
+.form-txt {
+    display: block;
+}
+.services, .finish, .record, .listUp {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.popup, .popup2, .popup3, .popup4, .popup5 {
+    display: none !important;
+}
+.calendar {
+    width: 100%;
+    left: 0;
+}
+.form {
+    background-color: #fff !important;
+    position: static;
+}
 }
