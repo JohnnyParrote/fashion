@@ -1688,29 +1688,33 @@ body {
 .popup-menu {
     grid-template-columns: 1fr;
     width: 370px;
-    height: 400px;
-    right: 0;
+    height: 560px;
+    right: 2px;
     top: -700px;
 }
 .popup-menu.active {
-    right: 0;
+    top: 100px;
+    right: 2px;
 }
 .popup-item1{
+    line-height: 15px;
     margin: 0 auto;
 }
 .popup-item1 p{
-    padding: 4px 16px 0 16px;
+    padding: 0 16px 0 16px;
 }
 .popup-item2 {
+    line-height: 15px;
     margin: 0 auto;
 }
 .popup-item2 p{
-    padding: 4px 16px 0 16px;
+    padding: 0 16px 0 16px;
 }
 .popup-item3{
     margin: 0 auto;
 }
 .popup-item3 p{
-    padding: 4px 16px 0 16px;
+    line-height: 15px;
+    padding: 0 16px 0 16px;
 }
 }
