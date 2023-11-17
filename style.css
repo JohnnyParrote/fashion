@@ -472,6 +472,7 @@ height: 82px;
     border: 1px solid rgba(48, 48, 48, 0.08); 
 }
 .form-area {
+    color: #30303099;
     margin: 8px 0;
     font-size: 16px;
     padding: 0 30px;
