@@ -35,6 +35,11 @@ const btn2 = document.querySelector('#btn2');
 const btn3 = document.querySelector('#btn3');
 const btn4 = document.querySelector('#btn4');
 const btn5 = document.querySelector('#btn5');
+const cldbtn = document.querySelector('.calendar_btn__main');
+
+cldbtn.onclick = function () {
+    calendar .classList.remove('show')
+}
 
 btnend.onclick = function () {
     finish.classList.add('popup__active')
@@ -67,7 +72,6 @@ categories.onclick = function () {
 
 
 document.addEventListener('click',e => {
-    console.log(e.target)
     if (e.target.className == 'calender_btn') {
         e.target.classList.add('calender_btn__active')
     }
@@ -87,6 +91,8 @@ document.addEventListener('click',e => {
     }
     else if(e.target.className == 'services__select') {
         e.target.classList.add('services__select_add')
+        formserv.value = e.target.textContent;
+        console.log(e.target.textContent);
         btn1.classList.add('color');
         btn2.classList.add('color');
         btn3.classList.add('color');
